@@ -1,0 +1,43 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+div {
+    margin: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#weather-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+#weather-container h2 {
+    color: #333;
+}
+#weather-container p {
+    margin: 5px 0;
+}
