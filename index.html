@@ -64,10 +64,32 @@
                 const element = document.createElement("option");
                 element.value = city.nome;
                 element.innerText = city.nome;
+                element.className("estadosSelect")
+                // element.addEventListener("click", getCidades(city.sigla))
                 estados.appendChild(element);
             })
+            
         }
         window.onload = getEstados;
+        
+        // const getCidades = async(city) => {
+        //     console.log(city);
+
+        //     const estadoSelecionado = estados.value;
+        //     const response = await fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${city}?providers=dados-abertos-br,gov,wikipedia`);
+        //     const data = await response.json();
+            
+        //     data.forEach((cidade) => {
+        //         const element = document.createElement("option");
+        //         element.value = cidade.nome;
+        //         element.innerText = cidade.nome;
+        //         cidades.appendChild(element);
+        //     });
+        // }
+        
+        window.onload = () => {
+            getEstados(); 
+        }
     </script>
 </body>
 </html>
